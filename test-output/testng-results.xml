@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-15T19:10:35 IST" name="Default suite" finished-at="2024-03-15T19:10:35 IST" duration-ms="99">
+    <groups>
+      <group name="Smoke">
+        <method signature="day4.smoke1()[pri:0, instance:Rahul_Shetty_TestNG_Practice.day4@5b7a5baa]" name="smoke1" class="Rahul_Shetty_TestNG_Practice.day4"/>
+        <method signature="day4.smoke2()[pri:0, instance:Rahul_Shetty_TestNG_Practice.day4@5b7a5baa]" name="smoke2" class="Rahul_Shetty_TestNG_Practice.day4"/>
+        <method signature="day4.smoke3()[pri:0, instance:Rahul_Shetty_TestNG_Practice.day4@5b7a5baa]" name="smoke3" class="Rahul_Shetty_TestNG_Practice.day4"/>
+        <method signature="day4.smoke4()[pri:0, instance:Rahul_Shetty_TestNG_Practice.day4@5b7a5baa]" name="smoke4" class="Rahul_Shetty_TestNG_Practice.day4"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-03-15T19:10:35 IST" name="Default test" finished-at="2024-03-15T19:10:35 IST" duration-ms="99">
+      <class name="Rahul_Shetty_TestNG_Practice.day4">
+        <test-method signature="demo(java.lang.String)[pri:0, instance:Rahul_Shetty_TestNG_Practice.day4@5b7a5baa]" started-at="2024-03-15T19:10:35 IST" name="demo" finished-at="2024-03-15T19:10:35 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method signature="smoke1()[pri:0, instance:Rahul_Shetty_TestNG_Practice.day4@5b7a5baa]" started-at="2024-03-15T19:10:35 IST" name="smoke1" finished-at="2024-03-15T19:10:35 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smoke1 -->
+        <test-method signature="smoke2()[pri:0, instance:Rahul_Shetty_TestNG_Practice.day4@5b7a5baa]" started-at="2024-03-15T19:10:35 IST" name="smoke2" finished-at="2024-03-15T19:10:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smoke2 -->
+        <test-method signature="smoke3()[pri:0, instance:Rahul_Shetty_TestNG_Practice.day4@5b7a5baa]" started-at="2024-03-15T19:10:35 IST" name="smoke3" finished-at="2024-03-15T19:10:35 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1031)
+at org.testng.Assert.assertEquals(Assert.java:1077)
+at Rahul_Shetty_TestNG_Practice.day4.smoke3(day4.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smoke3 -->
+        <test-method signature="smoke4()[pri:0, instance:Rahul_Shetty_TestNG_Practice.day4@5b7a5baa]" started-at="2024-03-15T19:10:35 IST" name="smoke4" finished-at="2024-03-15T19:10:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smoke4 -->
+      </class> <!-- Rahul_Shetty_TestNG_Practice.day4 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
