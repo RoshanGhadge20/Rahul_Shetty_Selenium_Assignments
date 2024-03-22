@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<listeners>
+	<!--<listeners>
 		<listener class-name="Rahul_Shetty_TestNG_Practice.TestNG_Listeners" />
 	</listeners>
 	</suitlisteners
-	<parameter name="Name" value="Roshan" />
-
-
-	<test name="Test">
-
+	<parameter name="Name" value="Roshan" />-->
+<test name="test">
 		<classes>
-			
+		<class name="Working_with_ExtentReport.ExtentReport_Practice"/>
 		</classes>
 
 	</test> <!-- Test -->
