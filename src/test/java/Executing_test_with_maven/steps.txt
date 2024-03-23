@@ -1,0 +1,31 @@
+Install maven into your local machine from official maven website
+Set path for maven into environment variables
+Verifty that maven is properly installed ino your local system by following commands 
+- mvn --version 
+Once maven is installed make an changes into the following the .xml file 
+
+	<profiles>
+		<profile>
+			<id>Regression</id>
+	<build>
+		<pluginManagement>
+			<plugins> 
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.2.5</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+				</plugins>
+		</pluginManagement>
+	</build>
+		</profile>
+	</profiles>
+	
+	
+execute the block of code through maven 
+mvn test -PRegression

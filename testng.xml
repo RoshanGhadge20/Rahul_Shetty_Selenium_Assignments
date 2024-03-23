@@ -8,8 +8,7 @@
 	<parameter name="Name" value="Roshan" />-->
 <test name="test">
 		<classes>
-		<class name="Working_with_ExtentReport.ExtentReport_Practice"/>
+		<class name="Rahul_Shetty_Practice_Projects.Assignment.Assignmen8"/>
 		</classes>
 
 	</test> <!-- Test -->
-</suite> <!-- Suite -->
