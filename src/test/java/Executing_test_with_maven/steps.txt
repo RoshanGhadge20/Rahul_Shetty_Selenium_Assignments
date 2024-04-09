@@ -5,7 +5,7 @@ Verifty that maven is properly installed ino your local system by following comm
 Once maven is installed make an changes into the following the .xml file 
 
 	<profiles>
-		<profile>
+		<profile> 
 			<id>Regression</id>
 	<build>
 		<pluginManagement>
