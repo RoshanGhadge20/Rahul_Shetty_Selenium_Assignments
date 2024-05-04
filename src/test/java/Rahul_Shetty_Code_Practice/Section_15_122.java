@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
 
 public class Section_15_122 {
 	public static void main(String[] args) {
@@ -15,7 +16,8 @@ public class Section_15_122 {
  
 		// Working with friendly locators WebElement
 		WebElement namebox=driver.findElement(By.xpath("//input[@name=\"name\"][1]"));
-		driver.findElement(with.TagName("label")).above(namebox));
+		WebElement element= driver.findElement(RelativeLocator.with(By.tagName("label")).above(namebox));
+		System.out.println(element.getText());
 
 		
 		
@@ -23,5 +25,10 @@ public class Section_15_122 {
 		System.out.println("End of Program Execution");
 		
 
+	}
+
+	private static By TagName(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
