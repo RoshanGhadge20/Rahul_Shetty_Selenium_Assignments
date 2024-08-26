@@ -9,9 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
-public class Assignment7 {
-
-	public static void main(String[] args) {
+public class Assignment7 
+{
+	public static void main(String[] args) 
+	{
 		System.setProperty("Webdriver.chrome.driver",
 				"C://Users//Admin//Downloads//chromedriver-win64_ver117.01//chromedriver-win64//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();

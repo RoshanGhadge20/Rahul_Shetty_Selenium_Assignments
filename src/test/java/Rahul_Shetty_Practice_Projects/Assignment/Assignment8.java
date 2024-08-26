@@ -1,10 +1,9 @@
 package Rahul_Shetty_Practice_Projects.Assignment;
 
-public class Assignment8 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+public class Assignment8 
+{
+	public static void main(String[] args)
+	{
 		//wants to printout the
 //		1234
 //		567
@@ -12,7 +11,8 @@ public class Assignment8 {
 //		10
 		int k=1;
 		/*
-		 * for (int i=0;i<4;i++) { for(int j=0;j<4-i;j++) { System.out.print(k);
+		 * for (int i=0;i<4;i++) { 
+		 * for(int j=0;j<4-i;j++) { System.out.print(k);
 		 * System.out.print("\t"); k++; } System.out.println(""); }
 		 */
 			

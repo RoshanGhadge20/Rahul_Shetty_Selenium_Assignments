@@ -1,6 +1,7 @@
 package Rahul_Shetty_Practice_Projects.Assignment;
 
-public class Assignment9 {
+public class Assignment9
+{
 	public static void main(String[] args) 
 	{
 		int k=3;

@@ -11,9 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Assignment4 {
-
-	public static void main(String[] args) {
+public class Assignment4 
+{
+	public static void main(String[] args) 
+	{
 		// Initializing the setproperty & creating object of chromedriver
 		System.setProperty("Webdriver.chrome.driver",
 				"C://Users//Admin//Downloads//chromedriver-win64_ver117.01//chromedriver-win64//chromedriver.exe");
@@ -33,8 +34,9 @@ public class Assignment4 {
 		System.out.println(driver.findElement(By.xpath("//div/h3")).getText());
 		driver.switchTo().window(parentWindow);
 		System.out.println(driver.findElement(By.xpath("//div[@id='content']/div/h3")).getText());
-		driver.close();
-		//System.out.println("End of Program");
+		
+		driver.quit();
+		System.out.println("End of Program");
 	}
 
 }

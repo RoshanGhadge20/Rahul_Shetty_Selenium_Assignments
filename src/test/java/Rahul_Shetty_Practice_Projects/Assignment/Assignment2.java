@@ -6,11 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Assignment2 {
-
-	public static void main(String[] args) throws InterruptedException {
-		
-
+public class Assignment2 
+{
+	public static void main(String[] args) throws InterruptedException 
+	{
 		System.setProperty("Webdriver.chrome.driver",
 				"C://Users//Admin//Downloads//chromedriver-win64_ver117.01//chromedriver-win64//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -30,9 +29,10 @@ public class Assignment2 {
 		driver.findElement(By.xpath("//input[@value='Submit']")).click();
 		String msgSting = driver.findElement(By.className("alert-success")).getText();
 		System.out.println(msgSting);
-		driver.close();
+		
+		driver.quit();
+		
 		System.out.println("End of Programs");
-
 	}
 
 }

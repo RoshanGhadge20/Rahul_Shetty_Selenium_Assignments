@@ -1,9 +1,5 @@
 package Rahul_Shetty_Practice_Projects.Assignment;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )

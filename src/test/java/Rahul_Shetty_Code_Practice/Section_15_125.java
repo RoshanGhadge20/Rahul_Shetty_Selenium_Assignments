@@ -7,10 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Section_15_125 {
+public class Section_15_125
+{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) 
+	{
 		System.setProperty("Webdriver.chrome.driver",
 				"E://Rahul Shetty Course//Assignment//WebDrivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -27,7 +28,6 @@ public class Section_15_125 {
 		
 		driver.switchTo().window(childwin);
 		driver.get("https://chromedriver.chromium.org/downloads");
-		
 		
 		/*
 		 * System.out.println(parentwin); System.out.println(childwin);

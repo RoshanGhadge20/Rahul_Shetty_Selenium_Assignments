@@ -6,10 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Assignment6 {
-
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+public class Assignment6 
+{
+	public static void main(String[] args) throws InterruptedException
+	{
 		System.setProperty("Webdriver.chrome.driver",
 				"C://Users//Admin//Downloads//chromedriver-win64_ver117.01//chromedriver-win64//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -25,13 +25,15 @@ public class Assignment6 {
 		driver.findElement(By.name("enter-name")).sendKeys(opt);
 		driver.findElement(By.id("alertbtn")).click();
 		String text = driver.switchTo().alert().getText();
-		if (text.contains(opt)) {
+		if (text.contains(opt)) 
+		{
 			System.out.println("Alert message success");
 		} else
-			System.out.println("Something wrong with execution");
+		{
+			System.out.println("Something wrong with execution");			
+		}
 
 		System.out.println("End of Program");
-
 	}
 
 }

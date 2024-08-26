@@ -12,11 +12,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class Headless_execution {
+public class Headless_execution
+{
 	public static void main(String[] args) throws IOException 
 	{
 		System.setProperty("Webdriver.chrome.driver", 
 				"E://Rahul Shetty Course//Assignment//WebDrivers//chromedriver.exe");
+		
 		// working with chromeoptions to run test cases in headless mode
 		
 		ChromeOptions option=new ChromeOptions();
@@ -26,6 +28,7 @@ public class Headless_execution {
 		driver.manage().deleteAllCookies();
 		
 		//Working with capturing the screenshots of the webelement & getting size of webelement
+		
 		driver.get("https://rahulshettyacademy.com/angularpractice/");
 		WebElement namefield=driver.findElement(By.name("name"));
 		namefield.sendKeys("Roshan Ghadge");
@@ -44,7 +47,5 @@ public class Headless_execution {
 		driver.quit();
 		System.out.println("End of program execution");
 		
-		
 	}				
-
 }

@@ -13,7 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
-public class Section_15_126_127 {
+public class Section_15_126_127 
+{
 	public static void main(String[] args) throws IOException 
 	{
 		System.setProperty("Webdriver.chrome.driver", 
@@ -40,9 +41,6 @@ public class Section_15_126_127 {
 		//Closing all browsers window 
 		driver.quit();
 		System.out.println("End of program execution");
-		
-		
-		
 	}
 
 }

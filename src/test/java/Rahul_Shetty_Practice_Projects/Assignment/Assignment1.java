@@ -5,9 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class Assignment1 {
+public class Assignment1
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		System.setProperty("Webdriver.chrome.driver",
 				"C://Users//Admin//Downloads//chromedriver-win64_ver117.01//chromedriver-win64//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -22,7 +24,7 @@ public class Assignment1 {
 
 		// To get the total number of checkboxes
 		System.out.println(driver.findElement(By.xpath("//input[@type='checkbox']")).getSize());
-		driver.close();
+		driver.quit();
 
 	}
 

@@ -5,9 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Assignment5 {
-
-	public static void main(String[] args) {
+public class Assignment5 
+{
+	public static void main(String[] args)
+	{
 		System.setProperty("Webdriver.chrome.driver",
 				"C://Users//Admin//Downloads//chromedriver-win64_ver117.01//chromedriver-win64//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -22,8 +23,6 @@ public class Assignment5 {
 		
 		System.out.println(driver.findElement(By.xpath("//*[@id='content']")).getText());
 		driver.close();
-		//System.out.println("End of Program");
-
+		System.out.println("End of Program");
 	}
-
 }

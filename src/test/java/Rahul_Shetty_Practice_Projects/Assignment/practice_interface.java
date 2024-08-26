@@ -3,16 +3,14 @@ package Rahul_Shetty_Practice_Projects.Assignment;
 public class practice_interface implements demo_interface {
 
 	@Override
-	public void getdemo() {
-		// TODO Auto-generated method stub
-
+	public void getdemo() 
+	{
 		System.out.println("Printing data from getdemo method");
 	}
 
 	@Override
-	public void setdemo() {
-		// TODO Auto-generated method stub
-
+	public void setdemo() 
+	{
 		System.out.println("Printing data from setdemo method");
 	}
 

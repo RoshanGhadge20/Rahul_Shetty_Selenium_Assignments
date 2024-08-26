@@ -10,8 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Assignment3 {
-	public static void main(String[] args) throws InterruptedException {
+public class Assignment3
+{
+	public static void main(String[] args) throws InterruptedException 
+	{
 		// Initializing the setproperty & creating object of chromedriver
 		System.setProperty("Webdriver.chrome.driver",
 				"C://Users//Admin//Downloads//chromedriver-win64_ver117.01//chromedriver-win64//chromedriver.exe");
@@ -36,10 +38,12 @@ public class Assignment3 {
 		driver.findElement(By.id("signInBtn")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("h1.my-4")));
 		List<WebElement> btns = driver.findElements(By.cssSelector("button.btn"));
-		for (int i = 0; i < btns.size(); i++) {
+		for (int i = 0; i < btns.size(); i++) 
+		{
 			btns.get(i).click();
 		}
 		driver.findElement(By.xpath("//*[@id=\"navbarResponsive\"]/ul/li/a"));
+		
 		driver.close();
 		System.out.println("End of Program Execution");
 	}
